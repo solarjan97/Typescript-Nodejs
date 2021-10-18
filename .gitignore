@@ -1,0 +1,4 @@
+node_modules
+lib
+mochawesome_report
+processed.json

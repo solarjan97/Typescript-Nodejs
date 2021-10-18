@@ -1,0 +1,49 @@
+{
+  "name": "my-package-jan-solar",
+  "version": "1.0.0",
+  "description": "\"# My Package by Jan Solar\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha 'tests/**/*.mjs' --reporter mochawesome",
+    "build": "tsc",
+    "run": "npx ts-node ./src/index.ts",
+    "format": "prettier --write \"src/**/*.ts\" ",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solarjan97/Typescript-Nodejs.git"
+  },
+  "keywords": ["reverse"],
+  "author": "Jan Solar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solarjan97/Typescript-Nodejs/issues"
+  },
+  "homepage": "https://github.com/solarjan97/Typescript-Nodejs#readme",
+  "devDependencies": {
+    "@babel/register": "^7.15.3",
+    "@testdeck/mocha": "^0.1.2",
+    "@types/chai": "^4.2.22",
+    "@types/expect": "^24.3.0",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "mochawesome": "^6.3.1",
+    "prettier": "^2.4.1",
+    "ts-mocha": "^8.0.0",
+    "ts-node": "^10.3.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.4.4"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "jsdom": "^18.0.0",
+    "nyc": "^15.1.0",
+    "present": "^1.0.0",
+    "ts-mockito": "^2.6.1"
+  }
+}
